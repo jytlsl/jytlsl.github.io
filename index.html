@@ -404,12 +404,11 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-              
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/11/test/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::https://jytlsl.github.io/2019/04/11/test/" class="cy_cmt_count" data-xid="2019/04/11/test/" itemprop="commentCount"></span>
+                <a href="/2019/04/11/test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/11/test/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -422,7 +421,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -579,12 +578,11 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
-              
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2017/10/28/hello-world/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::https://jytlsl.github.io/2017/10/28/hello-world/" class="cy_cmt_count" data-xid="2017/10/28/hello-world/" itemprop="commentCount"></span>
+                <a href="/2017/10/28/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/28/hello-world/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -597,7 +595,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -889,8 +887,33 @@
 
   
   
-  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=1Jy2UrTDTDtAJ0eJc32VI52S-gzGzoHsz"></script>
 
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: '1Jy2UrTDTDtAJ0eJc32VI52S-gzGzoHsz',
+    appKey: 'GAkPF8sqzFTRfaJDAlENSa6d',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 
 
